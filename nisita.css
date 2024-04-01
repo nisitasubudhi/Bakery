@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+
+
+.r{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    background-color: violet;
+    border: 2px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.r:hover{
+    background: red;
+    transition: 0.5s;
+}
+.r:hover{
+    color: white;
+}
+span{
+  color: red;
+}
+
+/* Header Start */
+header {
+  height: 100vh;
+  background: url("https://images3.alphacoders.com/106/1066385.jpg") center center/cover no-repeat;
+  position: relative;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  background: rgb(0, 0, 0, 0.6);
+  
+  
+  
+}
+
+.anime{
+  position:absolute;
+  columns: #fff;
+  top: 50%;
+  bottom: 50%;
+  
+  
+  height: 60px;
+  padding: 0 100px;
+  overflow: hidden;
+}
+.line{
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+  color: #e4b95b;
+
+}
+.line:first-child{
+  animation: anime 12s infinite;
+}
+@keyframes anime{
+ 0%{
+  margin-top: 0;
+ }
+ 10%{
+  margin-top: -60px;
+ }
+ 20%{
+  margin-top: -120px;
+ }
+ 30%{
+  margin-top: -180px;
+ }
+ 45%{
+  margin-top: -240px;
+ }
+ 65%{
+  margin-top: -120px;
+ }
+ 80%{
+  margin-top: -60px;
+ }
+ 100%{
+  margin-top: 0;
+ }
+}
+
+#navbar img {
+  width: 270px;
+  margin-left: 100px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+nav ul li a {
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid red;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.6);
+}
+
+header .content h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+header .content p {
+  color: #fff;
+  margin: 20px 0 40px;
+}
+
+header * {
+  z-index: 10;
+}
+
+/* Header End */
+
+/* About Start */
+#about {
+  height: 80vh;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .title,
+#offers .title,
+#menu .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#about h2,
+#offers h2,
+#menu h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  color: #383848;
+}
+
+#about .title p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+#about .about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .about-content p {
+  margin-right: 7rem;
+  line-height: 1.6;
+  color: #9a9a9a;
+  font-weight: 500;
+}
+
+#about img {
+  max-width: 500px;
+  
+}
+
+#about .about-content a {
+  margin-top: 2rem;
+}
+/* About End */
+/* Offers Section start */
+#card-area{
+        height: 80vh;
+        background: url("https://images.wallpapersden.com/image/download/my-simple-night_bWhoaGyUmZqaraWkpJRmbmdlrWZlbWU.jpg") center center/cover fixed;
+}
+#offers {
+  height: 80vh;
+  background: url("https://images.wallpapersden.com/image/download/my-simple-night_bWhoaGyUmZqaraWkpJRmbmdlrWZlbWU.jpg") center center/cover fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#offers h2 {
+  color: #e4b95b;
+}
+
+#offers .title p {
+  color: #fff;
+  font-weight: 500;
+}
+
+#offers .items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#offers .items img {
+  width: 300px;
+  padding: 20px;
+}
+
+#offers .items h3 {
+  font-size: 25px;
+  color: #fff;
+  margin: 15px 0;
+  color: #e4b95b;
+}
+
+#offers .items p {
+  color: #fff;
+  font-size: 16px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+#offers .items span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+
+.container{
+  margin:0 auto;
+  padding:3rem 2rem;
+}
+
+.container .title{
+  font-size: 40px;
+  color: #e4b95b;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.container .products-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap:8rem;
+}
+
+.container .products-container .product img{
+  width: 250px;
+  height: 350px;
+  
+}
+
+.container .products-container .product:hover img{
+  transform: scale(.9);
+}
+.container .products-container .product .price{
+  font-size: 15px;
+  text-align: center;
+  color: red;
+  font-weight: 500;  
+}
+
+#card-area .title h2{
+  text-align: center;
+  font-size: 40px;
+  color: #e4b95b;
+
+}
+#card-area .title p{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.card{
+    padding: 10px 10%;
+}
+#card-area{
+    padding: 50px 0;
+}
+
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box {
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.eats {
+	width: 100%;
+    color: white;
+	height: 0;
+	background: linear-gradient(transparent,#1c1c1c 58%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+.eats h3 {
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 80%;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+.eats a {
+	margin-top: 10px;
+	color: #262626;
+	text-decoration: none;
+	font-size: 14px;
+	background: #fff;
+	border-radius: 50px;
+	text-align: center;
+	padding: 5px 15px;
+}
+.box:hover img{
+    transform: scale(1.1);
+}
+.box:hover .eats{
+    height: 100%;
+}
+
+
+#contact {
+  background: #f4f2ed;
+  padding: 5rem 0;
+}
+#card-area .title .h2{
+  text-align: center;
+  color: red;
+}
+#contact .container {
+  max-width: 900px;
+}
+
+#contact .contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact .info {
+  width: 50%;
+}
+
+#contact .info div {
+  margin: 30px 0;
+  line-height: 1.7;
+}
+
+#contact .info h3 {
+  font-size: 28px;
+  color: #383848;
+  margin-bottom: 10px;
+}
+
+#contact .info img{
+  width: 250px;
+  height: 250px;
+
+}
+
+form {
+  width: 50%;
+}
+form p{
+  text-align: center;
+  font-weight: 700;
+}
+
+form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  margin: 20px 0;
+  border: none;
+  background-color: #e3e2dd;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+
+.bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+.bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+      position: relative;
+    }
+
+    #navbar img {
+      margin-bottom: 10px;
+    }
+
+    header .content h1 {
+      font-size: 18px;
+    }
+
+    header .content p {
+      font-size: 14px;
+    }
+
+    #about .about-content {
+      flex-direction: column;
+    }
+
+    #about .about-content a {
+      margin: 2rem 0;
+    }
+
+    #about img {
+      display: none;
+    }
+
+    #offers {
+      height: auto;
+      padding: 30px 10px;
+    }
+    #card-area{
+      height: auto;
+      padding: 30px 10px;
+    }
+
+    #offers .items {
+      flex-direction: column;
+    }
+
+
+    
+
+    #menu .menu-items .menu-item {
+      margin: 20px 10px;
+    }
+
+    #card-area .wrapper{
+      margin: 20px 10px;
+      
+    }
+
+    #contact .info,
+    form {
+      width: 80%;
+    }
+   
+  }
